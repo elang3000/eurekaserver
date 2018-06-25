@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: eureka
+    
+eureka:
+  client:
+    service-url:
+      default: http://127.0.0.1:8761/eureka/
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    enable-self-preservation: false  #仅适用开发环境 避免在eurekaclient中客户端显示的是能用但是实际不能用情况
+server:
+  port: 8761
